@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  /*overflow-x: hidden;*/ 
+}
+:root {
+  --color: #fff;
+}
+body, html {
+  scroll-behavior: smooth;
+  transition: width 0.5s, height 0.5s;
+  transition-timing-function: ease;
+}
+
+/* ----------- barra de navegação --------------- */
+
+.barra-de-navegacao {
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #FF0046;
+  font-size: 1.4em;
+  font-weight: bold;
+  width: 100%;
+  height: auto;
+}
+
+
+.lista-navegacao  ul {
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  padding: 0 5%;
+
+}
+
+
+.lista-navegacao li a {
+  text-decoration: none;
+}
+
+.lista-navegacao li a:hover {
+  cursor: pointer;  
+  /*color: black;*/
+}
+
+.lista-navegacao li i {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.lista-navegacao li i:hover {
+  font-size: 3.5rem;
+  color: #FF0046;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.lista-navegacao li:first-child {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid transparent;
+}
+
+.lista-navegacao li a:first-child {
+  padding-left: 1px;
+}
+
+.lista-navegacao li:first-child:hover {
+  background-color: #FF0046;
+  border: 2px solid white;
+}
+
+/* ----------- banner  --------------- */
+
+.banner {
+  width: 100%;
+  height: 70vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../img/background-main5.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 5rem;
+  flex-wrap: wrap;
+}
+
+.video iframe {
+  width: 560px; 
+  height: 315px; 
+  border-radius: 15px;
+}
+
+.texto-banner {
+  color: white;
+  width: 45%;
+  height: 100%;
+}
+.texto-banner h1 {
+  letter-spacing: -1px;
+  font-size: 3rem;
+  
+}
+
+.texto-banner p {
+  font-size: 1.1rem;
+  text-align: justify;
+  padding-bottom: 2rem;
+}
+
+.texto-banner a {
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  background-color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #FF0046;
+  border: 2px solid white;
+  transition: .5s ease-in-out;
+}
+
+.texto-banner i {
+  font-size: 1.2rem;
+  padding: 10px;
+  
+}
+
+.texto-banner a:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.line-down {
+  animation: 3s anim-lineDown ease-out;
+}
+
+@keyframes anim-lineDown {
+  0% {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.video {
+  animation: 3s anim-video ease-out;
+}
+
+@keyframes anim-video {
+  0% {
+    opacity: 0;
+    
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.3;
+    
+  }
+
+  100% {
+    opacity: 1;
+  
+  }
+}
+
+
+
+
+/* ----------- main  --------------- */
+
+
+.container-main {
+  font-family: 'Merriweather', serif;
+  width: 100%;
+  height: 70vh;
+  background-image: url(../img/gotas2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 5rem;
+}
+
+.texto-main{
+  color: #FF0046;
+  width: 50%;
+  text-align: end;
+  mix-blend-mode: difference;
+  
+}
+.texto-main h2{
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.texto-main p {
+  font-size: 1.1rem;
+  text-align: justify;
+  padding-bottom: 2rem;
+  
+}
+
+.texto-main a {
+
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  background-color: #FF0046;
+  border-radius: .5rem;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #FF0046;
+  transition: .5s ease-in-out;
+}
+
+.texto-main a:hover {
+   background-color: transparent;
+   color: #FF0046;
+}
+
+/* ----------- aside --------------- */
+.container-aside {
+  font-family: 'Grenze Gotisch', 'Merriweather', serif;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  background-image: url(../img/background-aside17.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  align-items: center;
+  justify-content: start;
+  padding: 5rem;
+}
+
+.texto-aside {
+  color: white;
+  width: 50%;
+}
+
+.texto-aside p {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding-bottom: 2.5rem;
+  
+}
+.texto-aside h2{
+  font-size: 4rem;
+}
+.texto-aside h2 span{
+  font-size: 6rem;
+}
+
+.texto-aside a {
+  color: #FF0046;
+  text-decoration: none;
+  font-size: 2.5rem;
+  background-image: url(../img/botao.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  padding: 1.5rem 5rem;
+  transition: .3s ease-in-out;
+}
+
+.texto-aside a:hover {
+  background-image: url(../img/botao-preto.svg);
+  color: white;
+}
+
+
+/* ----------- footer --------------- */
+
+footer {
+  font-family: 'Grenze Gotisch', 'Merriweather', serif;
+  width: 100%;
+  /*background-color: #A70031;*/
+  background-color: #160639;
+  color: white;
+  padding: 5rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer h4 {
+  padding-bottom: .2rem;
+  font-size: 1.8rem;
+}
+
+footer li  {
+  list-style: none; 
+  font-weight: 300; 
+}
+
+footer p {
+  padding-top: .5rem;
+  padding-bottom: .2rem;
+  font-weight: 500;
+}
+
+.redes-sociais ul {
+  display:flex ;
+  justify-content: space-around;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
