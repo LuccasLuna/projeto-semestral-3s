@@ -15,10 +15,9 @@
   }
 
   .video iframe {
-    width: 480px;
-    height: 270px;
+    width: 500px;
+    height: 281.25px;
   }
-
   .container-main {
     padding: 2rem 10rem;
   } 
@@ -32,8 +31,7 @@
     font-size: 2.9rem;
   }
 
-  .video iframe {
-    
+  .video iframe { 
     width: 480px;
     height: 270px;
   }
@@ -123,10 +121,6 @@
     padding: 2rem;
   }
 
-  .video iframe {
-    width: 500px;
-    height: 281.25px;
-  }
   .container-main {
     padding: 2rem;
   }
@@ -138,13 +132,13 @@
     font-size: 1.7rem;
     padding: 1.2rem 3.9rem;
   }
-  
+
   
 }
 @media screen and (max-width: 686px) {
 
   .banner {
-    background-image: url(../img/background-main7.svg);
+    background-image: url(../img/background-banner2.svg);
   }
   
   .texto-banner h1, .texto-main h2 {
