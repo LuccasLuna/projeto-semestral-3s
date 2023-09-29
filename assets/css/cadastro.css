@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  width: 100%;
+  padding: 2% 15%;  
+  background-image: url(../img/background-cadastro.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.titulo {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1.5%;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form ul{
+  list-style: none;
+}
+
+form p {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1.2rem;
+  color: white;
+  font-weight: 800;
+}
+.titulo h1{
+  font-size: 2rem;
+  padding-bottom: .3rem;
+  color: white;
+  font-weight: 800;
+}
+.titulo p{
+  font-size: 1.2rem;
+  padding-bottom: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+form input {
+  padding: .4rem 2rem;
+  height: 2.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: none;
+  color: #FF0046;
+  font-weight: 500;
+  font-size: 1rem;
+}
+form input::placeholder, form input[type=date] {
+  color: #FF0046;
+  font-size: 1rem;
+  font-weight: 500;
+  
+}
+
+
+
+.email{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email input{
+  width: 50%;
+  
+  
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.info-pessoal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+.info-pessoal input{
+  width: 50%;
+  background-color: white;
+  
+}
+
+.peso-altura {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6%;
+}
+.peso-altura input {
+  width: 47%;
+}
+
+.sexo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.lista-sexo { 
+  width: 50%;
+  display: flex; 
+  gap: 2rem;
+}
+.lista-sexo label{ 
+  font-size: 1.3rem;
+  cursor: pointer;
+  
+}
+
+
+.lista-sexo input[type='radio']:after {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 20px;
+  top: -5px;
+  left: -3px;
+  position: relative;
+  background-color: white;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  cursor: pointer;
+  border: 3px solid white;
+}
+
+.lista-sexo input[type='radio']:checked:after {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 20px;
+  top: -5px;
+  left: -3px;
+  position: relative;
+  background-color: #FF7187;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid white;
+}
+
+.tipo-sangue {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lista-sangue {
+  width: 50%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.lista-sangue input[type='radio'] {
+ display: none;
+}
+
+.lista-sangue ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.lista-sangue label{
+  display: inline-flex;
+  width: 3.12rem;
+  height: 3.12rem;
+  font-weight: 800;
+  place-items:center;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #FF0046;
+  border: 2px solid white;
+  transition: .5s ease-in-out;
+} 
+
+.clicado {
+  color: white  !important;
+  background-color: transparent !important;
+}
+
+.endereco {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.endereco ul{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.endereco li, .endereco input{
+  width: 100%;
+}
+
+
+.doenca {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  text-align: start;
+}
+.doenca select{
+  width: 12rem;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+form button {
+  width: 20%;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  padding: .5rem;
+  font-weight: 800;
+  color: #FF0046;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  border: 4px solid white;
+  background-color: white;
+  transition: .5s ease-in-out;
+}
+form button:hover {
+ background-color: transparent;
+ color: white;
+}
+form button i {
+  padding-left: .7rem;
+}

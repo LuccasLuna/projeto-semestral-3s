@@ -1,0 +1,68 @@
+@media screen and (max-width: 1237px) {
+  .email input, .info-pessoal input, .lista-sexo, .lista-sangue, .endereco ul, .doenca {
+    width: 70%;
+  }
+  
+  .peso-altura {
+    width: 70%;
+    gap: 2%;
+  }
+
+  .peso-altura input {
+    width: 49%;
+  }
+
+  form button {
+    width: 30%;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .email input, .info-pessoal input, .lista-sexo, .lista-sangue, .endereco ul {
+    width: 90%;
+  }
+  
+  .peso-altura {
+    width: 90%;
+    gap: 2%;
+  }
+
+}
+
+@media screen and (max-width: 773px) {
+  .email input, .info-pessoal input, .lista-sexo, .lista-sangue, .endereco ul {
+    width: 100%;
+  }
+  
+  .peso-altura {
+    width: 100%;
+    gap: 2%;
+  }
+
+  
+  form button {
+    width: 40%;
+  }
+
+}
+
+@media screen and (max-width: 620px) {
+  
+  main {
+    padding: 2% 10%;
+  }
+}
+
+@media screen and (max-width: 527px) {
+  
+  main {
+    padding: 2% 5%;
+  }
+}
+@media screen and (max-width: 499px) {
+  
+  main {
+    padding: 2%;
+  }
+}
