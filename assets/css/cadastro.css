@@ -181,7 +181,7 @@ form input::placeholder, form input[type=date] {
   align-items: center;
 }
 .lista-sangue input[type='radio'] {
- display: none;
+ opacity: 0;
 }
 
 .lista-sangue ul {
@@ -245,11 +245,6 @@ form input::placeholder, form input[type=date] {
   width: 12rem;
   border-radius: 5px;
 }
-
-
-
-
-
 
 form button {
   width: 20%;
