@@ -9,4 +9,7 @@
   background-color: transparent;
   box-shadow: -7px -5px 5px 5px  rgba(0, 0, 0, 0);
  }
+ a {
+  width: 50%;
+ }
 }
