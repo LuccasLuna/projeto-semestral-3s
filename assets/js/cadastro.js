@@ -3,6 +3,7 @@ const listaSangue = document.querySelector('.ul-sangue');
 
 
 listaSangue.addEventListener('click', (e) => {
+  
 
   if(e.target.tagName === 'INPUT') {
     const input = e.target;

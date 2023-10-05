@@ -15,11 +15,14 @@
   form button {
     width: 30%;
   }
+  .frag-endereco ul {
+    width: 100%;
+  }
 }
 
 
 @media screen and (max-width: 900px) {
-  .email input, .info-pessoal input, .lista-sexo, .lista-sangue, .endereco ul {
+  .email input, .info-pessoal input, .lista-sexo, .lista-sangue, .endereco ul, .doenca {
     width: 90%;
   }
   
@@ -27,17 +30,28 @@
     width: 90%;
     gap: 2%;
   }
+  .peso-altura input {
+    width: 49%;
+  }
 
+  .frag-endereco ul {
+    width: 100%;
+  }
+ 
 }
 
 @media screen and (max-width: 773px) {
-  .email input, .info-pessoal input, .lista-sexo, .lista-sangue, .endereco ul {
+  .email input, .info-pessoal input, .lista-sexo, .lista-sangue, .endereco ul, .doenca {
     width: 100%;
   }
   
   .peso-altura {
     width: 100%;
     gap: 2%;
+  }
+
+  .peso-altura input {
+    width: 49%;
   }
 
   
@@ -64,5 +78,29 @@
   
   main {
     padding: 2%;
+  }
+
+  .lista-sangue {
+   justify-content: center;
+  }
+  .lista-sangue ul{
+    width: 70%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 400px) {
+  
+ 
+  .lista-sangue {
+   justify-content: center;
+  }
+  .lista-sangue ul{
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  form button {
+    width: 50%;
   }
 }

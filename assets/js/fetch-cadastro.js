@@ -67,6 +67,7 @@ const data = {
 
 
 form.addEventListener('submit', async (e) =>  {
+  window.prompt('a');
   e.preventDefault(); 
 
   const data = await fetch("", {

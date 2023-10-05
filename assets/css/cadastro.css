@@ -188,7 +188,7 @@ form input::placeholder, form input[type=date] {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  flex-wrap: wrap;
+  
 }
 .lista-sangue label{
   display: inline-flex;
@@ -230,6 +230,13 @@ form input::placeholder, form input[type=date] {
   width: 100%;
 }
 
+.frag-endereco ul{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2%;
+ 
+}
 
 .doenca {
   color: white;

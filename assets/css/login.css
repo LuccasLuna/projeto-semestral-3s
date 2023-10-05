@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/background-cadastro.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  
+  padding: 5% 10%;
+  background-color: #ff0044b9;
+  border-radius: 20px;
+  box-shadow: -7px -5px 10px rgba(0, 0, 0, 0.404);
+}
+
+.titulo {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1.5%;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1{
+  font-size: 2.5rem;
+  padding-bottom: .3rem;
+  color: white;
+  font-weight: 800;
+}
+p{
+  font-size: 1.2rem;
+  padding-bottom: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+input {
+  padding: .4rem 2rem;
+  height: 4rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: none;
+  color: #FF0046;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+input::placeholder{
+  color: #FF0046;
+  font-size: 1rem;
+  font-weight: 500;
+  
+}
+
+.login, .cadastro{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login input{
+  width: 100%;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.cadastro{
+  margin-top: 3rem;
+}
+
+.cadastro h2{
+  font-size: 1.8rem;
+  padding-bottom: .3rem;
+  color: white;
+  font-weight: 800;
+}
+
+.cadastro p{
+  font-size: 1rem;
+  align-items: start;
+}
+
+.cadastro a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+
+button, a {
+  width: 40%;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  padding: .5rem;
+  font-weight: 800;
+  color: #FF0046;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: white;
+  transition: .5s ease-in-out;
+}
+
+button:hover, a:hover{
+ background-color: transparent;
+ color: white;
+}
+
+

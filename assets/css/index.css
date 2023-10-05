@@ -196,8 +196,6 @@ body, html {
 }
 
 
-
-
 /* ----------- main  --------------- */
 
 
@@ -336,8 +334,12 @@ footer p {
 .redes-sociais ul {
   display:flex ;
   justify-content: space-around;
-  cursor: pointer;
   font-size: 2rem;
+}
+
+.redes-sociais i:hover{
+  color: #FF0046;
+  cursor: pointer;
 }
 
 
