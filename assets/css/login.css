@@ -12,7 +12,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background-image: url(../img/background-cadastro.svg);
+  background-image: url(../img/background-login.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -22,9 +22,8 @@ body {
 }
 
 main {
-  
   padding: 5% 10%;
-  background-color: #ff0044b9;
+  background-color: #ff0044be;
   border-radius: 20px;
   box-shadow: -7px -5px 10px rgba(0, 0, 0, 0.404);
 }
@@ -90,7 +89,7 @@ input::placeholder{
 }
 
 .cadastro{
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .cadastro h2{
