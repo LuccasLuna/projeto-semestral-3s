@@ -8,10 +8,18 @@
   box-sizing: border-box;
   
   /*overflow-x: hidden;*/ 
+  
 }
+
 :root {
   --color: #fff;
 }
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body, html {
   scroll-behavior: smooth;
   transition: width 0.5s, height 0.5s;
