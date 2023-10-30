@@ -15,7 +15,9 @@ function checaSelect() {
 form.addEventListener('submit', async (e) =>  {
   e.preventDefault();
   checaSelect(); //chega se o usuário possui alguma doença
-   
+  console.log(document.querySelector('input[name="sangue"]:checked').value)
+  console.log(document.querySelector('input[name="sexo"]:checked').value)
+
   const valorPrompt = window.prompt(`Ao enviar você concorda com nossos termos, onde sua vida se torna propriedade exclusiva, irremediável e irrevogável do instituto Zé vampirinho. Na qual é resguardado o direito do possuinte de uso de sua propriedade como bem intender. Se você concorda digite "Sim", caso contrario, digite "Não"`);
 
   if (valorPrompt.toLowerCase() !== 'sim') {
@@ -24,28 +26,6 @@ form.addEventListener('submit', async (e) =>  {
   } else {
 
      // tbm poderia usar o dataForm
-    /*
-    const data = {
-      email: document.querySelector('#email').value,
-      senha: document.querySelector('#senha').value,
-      nome: document.querySelector('#nome').value,
-      dtNascimento: document.querySelector('#data-nasc').value,
-      cpf: document.querySelector('#cpf').value,
-      telefone: document.querySelector('#telefone').value,
-      altura: document.querySelector('#altura').value,
-      peso: document.querySelector('#peso').value,
-      sexo: document.querySelector('input[name="sexo"]:checked').value,
-      sangue: document.querySelector('input[name="sangue"]:checked').value,
-      rua: document.querySelector('#rua').value,
-      bairro: document.querySelector('#bairro').value,
-      municipio: document.querySelector('#municipio').value,
-      uf: document.querySelector('#uf').value,
-      numero: document.querySelector('#numero').value,
-      cep: document.querySelector('#cep').value,
-      complemento: document.querySelector('#complemento').value,
-      doencas: document.querySelector('#select-doencas').value
-    }
-    */
 
     try {
       const responsta = await fetch("", {
@@ -63,8 +43,8 @@ form.addEventListener('submit', async (e) =>  {
           telefone: document.querySelector('#telefone').value,
           altura: document.querySelector('#altura').value,
           peso: document.querySelector('#peso').value,
-          sexo: document.querySelector('input[name="sexo"]:checked').value,
-          sangue: document.querySelector('input[name="sangue"]:checked').value,
+          sexo: document.querySelector('input[name="sexo"]').value,
+          sangue: document.querySelector('input[name="sangue"]').value,
           rua: document.querySelector('#rua').value,
           bairro: document.querySelector('#bairro').value,
           municipio: document.querySelector('#municipio').value,
