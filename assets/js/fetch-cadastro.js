@@ -16,6 +16,7 @@ form.addEventListener('submit', async (e) =>  {
   e.preventDefault();
   checaSelect(); //chega se o usuário possui alguma doença
   
+  
   const valorPrompt = window.prompt(`Ao enviar você concorda com nossos termos, onde sua vida se torna propriedade exclusiva, irremediável e irrevogável do instituto Zé vampirinho. Na qual é resguardado o direito do possuinte de uso de sua propriedade como bem intender. Se você concorda digite "Sim", caso contrario, digite "Não"`);
 
   if (valorPrompt.toLowerCase() !== 'sim') {
@@ -26,7 +27,7 @@ form.addEventListener('submit', async (e) =>  {
      // tbm poderia usar o dataForm
 
     try {
-      const responsta = await fetch("", {
+      const responsta = await fetch("34.95.235.12", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -36,7 +37,7 @@ form.addEventListener('submit', async (e) =>  {
           email: document.querySelector('#email').value,
           senha: document.querySelector('#senha').value,
           nome: document.querySelector('#nome').value,
-          dtNascimento: document.querySelector('#data-nasc').value,
+          dtNascimento: document.querySelector('input[type="date"]').value,
           cpf: document.querySelector('#cpf').value,
           telefone: document.querySelector('#telefone').value,
           altura: document.querySelector('#altura').value,
@@ -66,4 +67,4 @@ form.addEventListener('submit', async (e) =>  {
   }
 
 });
-  
+
