@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+
+  <link rel="stylesheet" href="../assets/css/perfil.css">
+  <link rel="stylesheet" href="../assets/css/mq-perfil.css">
+  
+  <script src="../assets/js/perfil.js" defer></script>
+  <script src="../assets/js/fetch-perfil.js" defer></script>
+
+  <link type="image/png" sizes="32x32" rel="icon" href="image.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+<body>
+  <main class="container-perfil">
+    <div class="titulo">
+      <h1>Perfil</h1>
+      <p>Seja Bem vindo</p>
+    </div>
+
+    <nav>
+      <a href="dados.html">Atualizar cadastro</a>
+    </nav>
+    
+  
+    <div class="info-agendamento">
+      <h4>Agendar doação:</h4>
+    </div>
+
+    <form action="" method="post">
+    <div class="agendar-doacao">
+        <input type="CPF" name="CPF" id="CPF" placeholder="CPF:" maxlength="100" minlength="15" required><br>
+        <input type="data agendada" name="data agendada" id="Data agendada" placeholder="Data agendada:" maxlength="50" minlength="5" required><br>
+        <input type="horário agendado" name="horário agendado" id="horário agendado" placeholder="Horário agendado:" maxlength="50" minlength="5" required><br>
+    </div>
+
+
+      <div class="info-pessoal">
+        <p>Informações necessárias para doar:</p>
+        <div class="tatuagem">
+          <p>Fez tatuagem nos últimos 12 meses:</p>
+          <div class="lista-tatuagem" >
+            <label for="sim">Sim:</label>
+            <input type="radio" name="tatuagem" id="sim" required>
+            <label for="nao">Não:</label>
+            <input type="radio" name="tatuagem" id="nao">
+          </div>
+          <div class="piercing">
+            <p>Fez piencing nos últimos 6 meses:</p>
+            <div class="lista-piercing" >
+              <label for="sim">Sim:</label>
+              <input type="radio" name="piercing" id="sim" required>
+              <label for="nao">Não:</label>
+              <input type="radio" name="piercing" id="nao">
+            </div>
+            <div class="remedio">
+              <p>Faz medicamentos de uso contínuo:</p>
+              <div class="lista-remedio" >
+                <label for="sim">Sim:</label>
+                <input type="radio" name="remedio" id="sim" required>
+                <label for="nao">Não:</label>
+                <input type="radio" name="remedio" id="nao">
+              </div>
+    <div>
+      <button>Enviar<i class="fa-solid"></i></button>
+    </div>
+  </main>
+  
+</body>
+</html>

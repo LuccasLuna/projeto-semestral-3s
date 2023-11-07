@@ -66,11 +66,11 @@ form input {
   font-weight: 500;
   font-size: 1rem;
 }
-form input::placeholder, form input[type=date] {
+
+form input::placeholder {
   color: #FF0046;
   font-size: 1rem;
   font-weight: 500;
-  
 }
 
 
