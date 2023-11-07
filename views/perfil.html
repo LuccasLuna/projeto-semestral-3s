@@ -22,7 +22,7 @@
   <main class="container-perfil">
     <div class="titulo">
       <h1>Perfil</h1>
-      <p>Seja Bem vindo</p>
+      <p>Seja bem vindo ao seu perfil!</p>
     </div>
 
     <nav>
@@ -31,7 +31,7 @@
     
   
     <div class="info-agendamento">
-      <h4>Agendar doação:</h4>
+      <p>Agendar doação:</p>
     </div>
 
     <form action="" method="post">
@@ -43,32 +43,43 @@
 
 
       <div class="info-pessoal">
-        <p>Informações necessárias para doar:</p>
+
+        <p class="titulo-info-pessoal">Informações necessárias para doar:</p>
+
         <div class="tatuagem">
           <p>Fez tatuagem nos últimos 12 meses:</p>
+
           <div class="lista-tatuagem" >
             <label for="sim">Sim:</label>
             <input type="radio" name="tatuagem" id="sim" required>
             <label for="nao">Não:</label>
             <input type="radio" name="tatuagem" id="nao">
           </div>
-          <div class="piercing">
-            <p>Fez piencing nos últimos 6 meses:</p>
-            <div class="lista-piercing" >
-              <label for="sim">Sim:</label>
-              <input type="radio" name="piercing" id="sim" required>
-              <label for="nao">Não:</label>
-              <input type="radio" name="piercing" id="nao">
-            </div>
-            <div class="remedio">
-              <p>Faz medicamentos de uso contínuo:</p>
-              <div class="lista-remedio" >
-                <label for="sim">Sim:</label>
-                <input type="radio" name="remedio" id="sim" required>
-                <label for="nao">Não:</label>
-                <input type="radio" name="remedio" id="nao">
-              </div>
-    <div>
+        </div>
+
+        <div class="piercing">
+          <p>Fez piencing nos últimos 6 meses:</p>
+
+          <div class="lista-piercing" >
+            <label for="sim">Sim:</label>
+            <input type="radio" name="piercing" id="sim" required>
+            <label for="nao">Não:</label>
+            <input type="radio" name="piercing" id="nao">
+          </div>
+        </div>
+
+        <div class="remedio">
+          <p>Faz medicamentos de uso contínuo:</p>
+
+          <div class="lista-remedio" >
+            <label for="sim">Sim:</label>
+            <input type="radio" name="remedio" id="sim" required>
+            <label for="nao">Não:</label>
+            <input type="radio" name="remedio" id="nao">
+          </div>
+        </div>
+      </div>
+
       <button>Enviar<i class="fa-solid"></i></button>
     </div>
   </main>
