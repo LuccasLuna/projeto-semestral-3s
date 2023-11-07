@@ -27,7 +27,7 @@ form.addEventListener('submit', async (e) =>  {
      // tbm poderia usar o dataForm
 
     try {
-      const responsta = await fetch("34.95.235.12", {
+      const responsta = await fetch("", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,7 +37,7 @@ form.addEventListener('submit', async (e) =>  {
           email: document.querySelector('#email').value,
           senha: document.querySelector('#senha').value,
           nome: document.querySelector('#nome').value,
-          dtNascimento: document.querySelector('input[type="date"]').value,
+          dtNascimento: document.querySelector('input[type="date"]').value.toString(),
           cpf: document.querySelector('#cpf').value,
           telefone: document.querySelector('#telefone').value,
           altura: document.querySelector('#altura').value,
