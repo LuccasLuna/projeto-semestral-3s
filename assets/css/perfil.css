@@ -24,7 +24,7 @@
     padding: 2% 15%;  
     background-color: #ff7186a2;
     border-radius: 20px;
-    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.404);
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.164);
   }
   
   .titulo {
@@ -287,22 +287,23 @@
   border: 3px solid white;
 }
 
-form button {
-  width: 21.5%;
+.btEnviar {
   height: 3.5rem;
   font-size: 1.5rem;
-  padding: .5rem;
+  padding: .7rem;
   font-weight: 800;
   color: #FF0046;
   border: none;
   border-radius: 15px;
+  margin-top: 1.7rem;
   margin-bottom: 2rem;
   cursor: pointer;
   border: 2px solid white;
   background-color: white;
   transition: .5s ease-in-out;
+  
 }
-form button:hover {
+.btEnviar:hover {
   background-color: transparent;
   color: white;
 }
