@@ -2,120 +2,122 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,800&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  body {
-    background-image: url(../img/perfilImg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-  main {
-    margin: 2% 20%;
-    padding: 2% 15%;  
-    background-color: #ff7186a2;
-    border-radius: 20px;
-    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.164);
-  }
-  
-  .titulo {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 1.5%;
-  }
+body {
+  background-image: url(../img/perfilImg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .titulo h1{
-    font-size: 2.2rem;
-    padding-bottom: .3rem;
-    color: white;
-    
-  }
-  .titulo p{
-    font-size: 1.2rem;
-    padding-bottom: 1.5rem;
-    color: white;
-    font-weight: 500;
-  }
+main {
+  margin: 2% 20%;
+  padding: 2% 15%;
+  background-color: #ff7186a2;
+  border-radius: 20px;
+  box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.164);
+}
 
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  }
-  
-  nav a{
-    padding: 1rem;
-    height: 4rem;
-    font-size: 1.2rem !important; 
-    font-weight: 600;
-    color: #FF0046;
-    border: none;
-    border-radius: 15px;
-    margin-bottom: 3rem;
-    cursor: pointer;
-    border: 2px solid white;
-    background-color: white;
-    transition: .5s ease-in-out;
-    font-size: 15px; /* Defina o tamanho da fonte desejado em pixels */
-    text-decoration: none;
-  }
+.titulo {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1.5%;
+}
 
-  nav a:hover {
-    background-color: transparent;
-    color: white;
-  }
-  
-  form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  form p {
-    font-size: 1.2rem;
-    padding-bottom: 1.2rem;
-    color: white;
-    font-weight: 500;
-  }
+.titulo h1 {
+  font-size: 2.2rem;
+  padding-bottom: .3rem;
+  color: white;
 
- 
-  form input {
-    padding: .4rem 2rem;
-    height: 2.5rem;
-    margin-bottom: .5rem;
-    border-radius: 10px;
-    border: none;
-    color: #FF0046;
-    font-weight: 500;
-    font-size: 1rem;
-  }
+}
 
-  form input::placeholder {
-    color: #FF0046;
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  
+.titulo p {
+  font-size: 1.2rem;
+  padding-bottom: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  padding: 1rem;
+  height: 4rem;
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  color: #FF0046;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: white;
+  transition: .5s ease-in-out;
+  font-size: 15px;
+  /* Defina o tamanho da fonte desejado em pixels */
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: transparent;
+  color: white;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form p {
+  font-size: 1.2rem;
+  padding-bottom: 1.2rem;
+  color: white;
+  font-weight: 500;
+}
 
 
-   form button i {
-    padding-left: .7rem;
-   }
+form input {
+  padding: .4rem 2rem;
+  height: 2.5rem;
+  margin-bottom: .5rem;
+  border-radius: 10px;
+  border: none;
+  color: #FF0046;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+form input::placeholder {
+  color: #FF0046;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+
+form button i {
+  padding-left: .7rem;
+}
 
 
 .titulo-info-pessoal {
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
 .info-agendamento {
@@ -124,19 +126,22 @@
   padding-bottom: 1.2rem;
   flex-direction: column;
   align-items: center;
-  font-size: 1.7rem; /* Defina o tamanho da fonte desejado em pixels */
-  color: white; /* defina a cor da fonte */
-  font-weight: bold; /* negrito */
+  font-size: 1.7rem;
+  /* Defina o tamanho da fonte desejado em pixels */
+  color: white;
+  /* defina a cor da fonte */
+  font-weight: bold;
+  /* negrito */
 }
 
 
-.agendar-doacao{
+.agendar-doacao {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.info-pessoal{
+.info-pessoal {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -144,9 +149,9 @@
   color: white;
 }
 
-.lista-tatuagem { 
+.lista-tatuagem {
   width: 100%;
-  display: flex; 
+  display: flex;
   gap: 2rem;
 }
 
@@ -154,10 +159,10 @@
   font-size: 1rem;
 }
 
-.lista-tatuagem label{ 
+.lista-tatuagem label {
   font-size: 1.3rem;
   cursor: pointer;
-  
+
 }
 
 
@@ -189,7 +194,8 @@
   visibility: visible;
   border: 3px solid white;
 }
-.info-piercing{
+
+.info-piercing {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -197,15 +203,16 @@
   color: white;
 }
 
-.lista-piercing { 
+.lista-piercing {
   width: 50%;
-  display: flex; 
+  display: flex;
   gap: 2rem;
 }
-.lista-piercing label{ 
+
+.lista-piercing label {
   font-size: 1.3rem;
   cursor: pointer;
-  
+
 }
 
 
@@ -238,7 +245,7 @@
   border: 3px solid white;
 }
 
-.info-remedio{
+.info-remedio {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -246,15 +253,16 @@
   color: white;
 }
 
-.lista-remedio { 
+.lista-remedio {
   width: 50%;
-  display: flex; 
+  display: flex;
   gap: 2rem;
 }
-.lista-remedio label{ 
+
+.lista-remedio label {
   font-size: 1.3rem;
   cursor: pointer;
-  
+
 }
 
 
@@ -301,9 +309,37 @@
   border: 2px solid white;
   background-color: white;
   transition: .5s ease-in-out;
-  
+
 }
+
 .btEnviar:hover {
   background-color: transparent;
   color: white;
+}
+
+dialog {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: auto;
+  padding: 2rem;
+  color: #FF0046;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.096);
+}
+
+dialog button {
+  font-size: 1.2rem;
+  font-weight: 500;
+  align-items: end;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: .7rem;
+  color: #FF0046;
+  cursor: pointer;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.445);
 }

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../assets/css/mq-perfil.css">
 
   <script src="../assets/js/perfil.js" defer></script>
-  <script src="../assets/js/fetch-perfil.js" defer></script>
+
 
   <link type="image/png" sizes="32x32" rel="icon" href="image.ico">
 
@@ -38,10 +38,11 @@
 
     <form action="" method="post">
       <div class="agendar-doacao">
-        <input type="text" name="cpf" id="cpf" placeholder="CPF:" maxlength="14" minlength="14" required><br>
-        <input type="date" name="data-agendamento" id="data-agendamento" required><br>
-        <input type="text" name="hora-agendamento" id="hora-agendamento" placeholder="Horário agendado:" maxlength="5"
-          minlength="5" required><br>
+        <input type="text" name="cpf" id="cpf" class="input-agendamento" placeholder="CPF:" maxlength="14"
+          minlength="14" required><br>
+        <input type="date" name="data-agendamento" id="data-agendamento" class="input-agendamento" required><br>
+        <input type="text" name="hora-agendamento" id="hora-agendamento" class="input-agendamento"
+          placeholder="Horário agendado:" maxlength="5" minlength="5" required><br>
       </div>
 
 
@@ -84,8 +85,18 @@
       </div>
 
       <button class="btEnviar">Enviar</button>
-      </div>
+
+
+    </form>
+
   </main>
+
+  <dialog>
+    <p>Agendamento concluído com sucesso!</p>
+
+    <button>Fechar</button>
+  </dialog>
+
 
 </body>
 
