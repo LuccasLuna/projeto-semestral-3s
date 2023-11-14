@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,16 @@
 
   <link rel="stylesheet" href="../assets/css/cadastro.css">
   <link rel="stylesheet" href="../assets/css/mq-cadastro.css">
-  
+
   <script src="../assets/js/cadastro.js" defer></script>
   <script src="../assets/js/fetch-cadastro.js" defer></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
   <main class="container-cadastro">
     <div class="titulo">
@@ -26,125 +28,144 @@
     </div>
 
     <form action="" method="post">
-    <div class="email">
+      <div class="email">
         <input type="email" name="email" id="email" placeholder="Email:" maxlength="100" minlength="15" required>
         <input type="password" name="senha" id="senha" placeholder="Senha:" maxlength="50" minlength="5" required>
-    </div>
+      </div>
 
-    <div class="info-pessoal">
-      <p>Informações pessoais</p>
-       
+      <div class="info-pessoal">
+        <p>Informações pessoais</p>
+
         <input type="text" name="nome" id="nome" placeholder="Nome completo:" minlength="10" maxlength="200" required>
         <input type="date" name="data-nasc" id="data-nasc" required>
         <input type="text" name="cpf" id="cpf" placeholder="CPF:" maxlength="14" minlength="14" required>
         <input type="text" name="telefone" id="telefone" placeholder="Telefone:" maxlength="18" minlength="15" required>
 
         <div class="peso-altura">
-          <input type="number" name="altura" id="altura" placeholder="Altura:" step="0.1" maxlength="4" minlength="3" required>
-          <input type="number" name="peso" id="peso" placeholder="Peso(KG):" step="0.1" maxlength="6" minlength="3" required>
+          <input type="number" name="altura" id="altura" placeholder="Altura:" step="0.1" maxlength="4" minlength="3"
+            required>
+          <input type="number" name="peso" id="peso" placeholder="Peso(KG):" step="0.1" maxlength="6" minlength="3"
+            required>
         </div>
-    </div>
-
-    <div class="sexo">
-      <p>Sexo</p>
-      <div class="lista-sexo " >
-        <label for="masculino">Masculino:</label>
-        <input type="radio" name="sexo" id="masculino" value="masculino" required>
-        <label for="feminino">Feminino:</label>
-        <input type="radio" name="sexo" id="feminino" value="feminino">
       </div>
-    </div>
-    
-    <div class="tipo-sangue">
-      <p>Tipo sanguineo</p>
-      <div class="lista-sangue">
-       <ul class="ul-sangue">
-          <li  class="li-sangue">
-            <label for="A-mais" class="A-mais">A+</label>
-            <input type="radio" name="sangue" id="A-mais"  value="a+" required>
-          </li>
 
-          <li  class="li-sangue">
-            <label for="A-menos" class="A-menos">A-</label>
-            <input type="radio" name="sangue" id="A-menos" value="a-" >
-          </li>
-
-          <li  class="li-sangue">
-            <label for="B-mais" class="B-mais">B+</label>
-            <input type="radio" name="sangue" id="B-mais" value="b+" >
-          </li>
-
-          <li  class="li-sangue">
-            <label for="B-menos" class="B-menos">B-</label>
-            <input type="radio" name="sangue" id="B-menos" value="b-">
-          </li>
-        
-          <li  class="li-sangue">
-            <label for="AB-mais" class="AB-mais">AB+</label>
-            <input type="radio" name="sangue" id="AB-mais" value="ab+">
-          </li>
-
-          <li  class="li-sangue">
-            <label for="AB-menos" class="AB-menos">AB-</label>
-            <input type="radio" name="sangue" id="AB-menos" value="ab-">
-          </li>
-
-          <li  class="li-sangue">
-            <label for="O-mais"class="O-mais">O+</label>
-            <input type="radio" name="sangue" id="O-mais" value="o+">
-          </li>
-
-          <li  class="li-sangue">
-            <label for="O-menos" class="O-menos">O-</label>
-            <input type="radio" class="radio-sangue" name="sangue" id="O-menos" value="o-"> 
-          </li>
-       </ul>
+      <div class="sexo">
+        <p>Sexo</p>
+        <div class="lista-sexo ">
+          <label for="masculino">Masculino:</label>
+          <input type="radio" name="sexo" id="masculino" value="masculino" required>
+          <label for="feminino">Feminino:</label>
+          <input type="radio" name="sexo" id="feminino" value="feminino">
+        </div>
       </div>
-    </div>
-    
-    <div class="endereco">
-      <p>Endereço</p>
-      <ul>
-        <li><input type="text" name="rua" id="rua" placeholder="Rua:" required></li>
-        <li><input type="text" name="bairro" id="bairro" placeholder="Bairro:" required></li>
-        <li><input type="text" name="municipio" id="municipio" placeholder="Municipio:" required></li>
-        
-        <div class="frag-endereco">
-          <ul>
-            <li><input type="text" name="uf" id="uf" placeholder="UF:" required></li>
-            <li><input type="number" name="numero" id="numero" placeholder="Numero:" required></li>
-            <li><input type="text" name="cep" id="cep" placeholder="CEP:" required></li>
+
+      <div class="tipo-sangue">
+        <p>Tipo sanguineo</p>
+        <div class="lista-sangue">
+          <ul class="ul-sangue">
+            <li class="li-sangue">
+              <label for="A-mais" class="A-mais">A+</label>
+              <input type="radio" name="sangue" id="A-mais" value="a+" required>
+            </li>
+
+            <li class="li-sangue">
+              <label for="A-menos" class="A-menos">A-</label>
+              <input type="radio" name="sangue" id="A-menos" value="a-">
+            </li>
+
+            <li class="li-sangue">
+              <label for="B-mais" class="B-mais">B+</label>
+              <input type="radio" name="sangue" id="B-mais" value="b+">
+            </li>
+
+            <li class="li-sangue">
+              <label for="B-menos" class="B-menos">B-</label>
+              <input type="radio" name="sangue" id="B-menos" value="b-">
+            </li>
+
+            <li class="li-sangue">
+              <label for="AB-mais" class="AB-mais">AB+</label>
+              <input type="radio" name="sangue" id="AB-mais" value="ab+">
+            </li>
+
+            <li class="li-sangue">
+              <label for="AB-menos" class="AB-menos">AB-</label>
+              <input type="radio" name="sangue" id="AB-menos" value="ab-">
+            </li>
+
+            <li class="li-sangue">
+              <label for="O-mais" class="O-mais">O+</label>
+              <input type="radio" name="sangue" id="O-mais" value="o+">
+            </li>
+
+            <li class="li-sangue">
+              <label for="O-menos" class="O-menos">O-</label>
+              <input type="radio" class="radio-sangue" name="sangue" id="O-menos" value="o-">
+            </li>
           </ul>
         </div>
-        <li><input type="text" name="complemento" id="complemento" placeholder="Complemento:"></li>
-      </ul>
-    </div>
-    
-    <div class="doenca">
-      <label for="select-doencas">Possui alguma dessas doenças ou condições? </label>
-      <select name="select-doencas" id="select-doencas" required>
-        <option value="0">Nenhuma</option>
-        <option value="1">Síndrome cardiorrenal</option>
-        <option value="2">Doença hematológica</option>
-        <option value="3">Doença pulmonar</option>
-        <option value="4">Doença hepática</option>
-        <option value="5">Doença autoimune</option>
-        <option value="6">Diabete</option>
-        <option value="7">hipertireoidismo</option>
-        <option value="8">Hanseníase</option>
-        <option value="9">Tuberculose</option>
-        <option value="10">Câncer</option>
-        <option value="11">Sangramentos anormais</option>
-        <option value="12">Chagas</option>
-        <option value="13">Hepatite</option>
-        <option value="14">AIDS</option>
-        <option value="15">Sífilis</option>
-      </select>
-    </div>
+      </div>
 
-    <button>Enviar<i class="fa-solid fa-paper-plane"></i></button>
-  </form>
+      <div class="endereco">
+        <p>Endereço</p>
+        <ul>
+          <li>
+            <input type="text" name="rua" id="rua" placeholder="Rua:" minlength="5" maxlength="50" required>
+          </li>
+          <li>
+            <input type="text" name="bairro" id="bairro" placeholder="Bairro:" minlength="5" maxlength="50" required>
+          </li>
+          <li>
+            <input type="text" name="municipio" id="municipio" placeholder="Municipio:" minlength="5" maxlength="50"
+              required>
+          </li>
+
+          <div class="frag-endereco">
+            <ul>
+              <li>
+                <input type="text" name="uf" id="uf" placeholder="UF:" minlength="2" maxlength="2" required>
+              </li>
+              <li>
+                <input type="number" name="numero" id="numero" placeholder="Numero:" minlength="1" maxlength="3"
+                  required>
+              </li>
+              <li>
+                <input type="text" name="cep" id="cep" placeholder="CEP:" minlength="9" maxlength="9" required>
+              </li>
+            </ul>
+          </div>
+          <li>
+            <input type="text" name="complemento" id="complemento" placeholder="Complemento:" maxlength="50">
+          </li>
+        </ul>
+      </div>
+
+      <div class="doenca">
+        <label for="select-doencas">Possui alguma dessas doenças ou condições? </label>
+        <select name="select-doencas" id="select-doencas" required>
+          <option value="0">Nenhuma</option>
+          <option value="1">Síndrome cardiorrenal</option>
+          <option value="2">Doença hematológica</option>
+          <option value="3">Doença pulmonar</option>
+          <option value="4">Doença hepática</option>
+          <option value="5">Doença autoimune</option>
+          <option value="6">Diabete</option>
+          <option value="7">hipertireoidismo</option>
+          <option value="8">Hanseníase</option>
+          <option value="9">Tuberculose</option>
+          <option value="10">Câncer</option>
+          <option value="11">Sangramentos anormais</option>
+          <option value="12">Chagas</option>
+          <option value="13">Hepatite</option>
+          <option value="14">AIDS</option>
+          <option value="15">Sífilis</option>
+        </select>
+      </div>
+
+      <button>Enviar<i class="fa-solid fa-paper-plane"></i></button>
+    </form>
   </main>
-  
+
 </body>
+
 </html>

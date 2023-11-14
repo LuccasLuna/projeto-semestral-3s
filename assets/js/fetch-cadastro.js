@@ -4,19 +4,19 @@ function checaSelect() {
   const select = document.querySelector('#select-doencas');
   const value = select.options[select.selectedIndex].value;
 
-  if(value !== '0') {
-    alert('desculpe, mas você não pode doar sangue'); 
+  if (value !== '0') {
+    alert('desculpe, mas você não pode doar sangue');
     return window.location.href = '../index.html'; // retorna pro index
     // return  window.history.back();
   }
 }
 
 
-form.addEventListener('submit', async (e) =>  {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
   checaSelect(); //chega se o usuário possui alguma doença
-  
-  
+
+
   const valorPrompt = window.prompt(`Ao enviar você concorda com nossos termos, onde sua vida se torna propriedade exclusiva, irremediável e irrevogável do instituto Zé vampirinho. Na qual é resguardado o direito do possuinte de uso de sua propriedade como bem intender. Se você concorda digite "Sim", caso contrario, digite "Não"`);
 
   if (valorPrompt.toLowerCase() !== 'sim') {
@@ -24,10 +24,10 @@ form.addEventListener('submit', async (e) =>  {
     return window.location.href = '../index.html';
   } else {
 
-     // tbm poderia usar o dataForm
+    // tbm poderia usar o dataForm
 
     try {
-      const responsta = await fetch("", {
+      const resposta = await fetch("", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -54,11 +54,11 @@ form.addEventListener('submit', async (e) =>  {
           doencas: document.querySelector('#select-doencas').value
         })
       });
-  
-      if (!responsta.ok) {
+
+      if (!resposta.ok) {
         console.log('Erro na requisição.');
       } else {
-        const res = await responsta.json();
+        const res = await resposta.json();
         console.log('Requisição bem-sucedida:', res);
       }
     } catch (erro) {

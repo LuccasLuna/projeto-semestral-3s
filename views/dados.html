@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atualização de dados</title>
 
-  <link type="image/png" sizes="32x32" rel="icon" href="assets/img/image.png">
-
-  <script src="../assets/js/dados.js" defer></script>
   <script src="../assets/js/fetch-dados.js" defer></script>
 
   <link rel="stylesheet" href="../assets/css/dados.css">
@@ -15,6 +13,7 @@
 
 
 </head>
+
 <body>
   <main class="container-perfil">
     <div class="titulo">
@@ -24,41 +23,59 @@
 
 
     <form action="" method="post">
-      <div class="dados-email">
-          <input type="Confirme seu e-mail:" name="Confirme seu e-mail:" id="Confirme seu e-mail:" placeholder="Confirme seu e-mail:" maxlength="100" minlength="15" required>
-      </div>
-      
       <div class="info-dados">
         <p>Dados pessoais:</p>
       </div>
- 
+
+
       <div class="atualizacao">
-          <input type="Nome completo" name="Nome completo" id="Nome completo" placeholder="Nome completo:" maxlength="100" minlength="15" required>
-          <input type="CPF" name="CPF" id="CPF" placeholder="CPF:" maxlength="100" minlength="15" required>
-          <input type="Peso(kg)" name="Peso(kg)" id="Peso(kg)" placeholder="Peso(kg):" maxlength="100" minlength="15" required>
-          <input type="Data de nascimento" name="Data de nascimento" id="Data de nascimento" placeholder="Data de nascimento:" maxlength="100" minlength="15" required>
-          <input type="Telefone" name="Telefone" id="Telefone" placeholder="Telefone:" maxlength="100" minlength="15" required>
-          <input type="Tipo sanguíneo" name="Tipo sanguíneo" id="Tipo sanguíneo" placeholder="Tipo sanguíneo:" maxlength="100" minlength="15" required>
+        <input type="email" name="email" id="email" placeholder="Email:" maxlength="100" minlength="15" required>
+        <input type="password" name="senha" id="senha" placeholder="Senha:" maxlength="50" minlength="5" required>
+        <input type="text" name="nome" id="nome" placeholder="Nome completo:" minlength="10" maxlength="200" required>
+        <input type="text" name="cpf" id="cpf" placeholder="CPF:" maxlength="14" minlength="14" required>
+        <input type="number" name="peso" id="peso" placeholder="Peso(KG):" step="0.1" maxlength="6" minlength="3"
+          required>
+        <input type="number" name="altura" id="altura" placeholder="Altura:" step="0.1" maxlength="4" minlength="3"
+          required>
+        <input type="date" name="data-nasc" id="data-nasc" required>
+        <input type="text" name="telefone" id="telefone" placeholder="Telefone:" minlength="15" maxlength="18" required>
+
+        <div class="tipo-sangue">
+          <label for="select-sangue">Tipo sanguíneo: </label>
+          <select name="select-sangue" id="select-sangue" required>
+            <option value="a+">A+</option>
+            <option value="a-">A-</option>
+            <option value="b+">B+</option>
+            <option value="b-">B-</option>
+            <option value="ab+">AB+</option>
+            <option value="ab-">AB-</option>
+            <option value="o+">O+</option>
+            <option value="o-">O-</option>
+          </select>
+        </div>
       </div>
 
       <div class="info-dado">
         <p>Endereço:</p>
       </div>
 
-          
+
       <div class="endereco">
-          <input type="CEP" name="CEP" id="CEP" placeholder="CEP:" maxlength="100" minlength="15" required>
-          <input type="Rua" name="Rua" id="Rua" placeholder="Rua:" maxlength="100" minlength="15" required>
-          <input type="Bairro" name="Bairro" id="Bairro" placeholder="Bairro:" maxlength="100" minlength="15" required>
-          <input type="Municipio" name="Municipio" id="Municipio" placeholder="Municipio:" maxlength="100" minlength="15" required>
-          <input type="UF" name="UF" id="UF" placeholder="UF:" maxlength="100" minlength="15" required>
-          <input type="Complemento" name="Complemento" id="Complemento" placeholder="Complemento:" maxlength="100" minlength="15" required>
+        <input type="text" name="cep" id="cep" placeholder="CEP:" minlength="9" maxlength="9" required>
+        <input type="text" name="rua" id="rua" placeholder="Rua:" minlength="5" maxlength="50" required>
+        <input type="text" name="bairro" id="bairro" placeholder="Bairro:" minlength="5" maxlength="50" required>
+        <input type="text" name="municipio" id="municipio" placeholder="Municipio:" minlength="5" maxlength="50"
+          required>
+        <input type="text" name="uf" id="uf" placeholder="UF:" minlength="2" maxlength="2" required>
+        <input type="number" name="numero" id="numero" placeholder="Numero:" minlength="1" maxlength="3" required>
+        <input type="text" name="complemento" id="complemento" placeholder="Complemento:" maxlength="50">
       </div>
 
-        <div>
-          <button>Atualizar<i class="fa-solid"></i></button>
-        </div>
-    </form> 
+      <div>
+        <button>Atualizar</button>
+      </div>
+    </form>
   </main>
 </body>
+
 </html>
