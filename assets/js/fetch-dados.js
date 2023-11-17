@@ -2,6 +2,10 @@ const form = document.querySelector('form');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
+
+  const cpf = document.querySelector('#cpf').value.replace(/\D+/g, '');
+  const cpfNumerico = Number(cpf);
+
   try {
     const resposta = await fetch("", {
       method: "PUT",
@@ -13,7 +17,7 @@ form.addEventListener('submit', async (e) => {
         email: document.querySelector('#email').value,
         senha: document.querySelector('#senha').value,
         nome: document.querySelector('#nome').value,
-        cpf: document.querySelector('#cpf').value,
+        cpf: cpfNumerico,
         peso: document.querySelector('#peso').value,
         altura: document.querySelector('#altura').value,
         dtNascimento: document.querySelector('input[type="date"]').value.toString(),

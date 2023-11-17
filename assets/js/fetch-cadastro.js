@@ -16,6 +16,11 @@ form.addEventListener('submit', async (e) => {
   e.preventDefault();
   checaSelect(); //chega se o usuário possui alguma doença
 
+  const cpf = document.querySelector('#cpf').value.replace(/\D+/g, '');
+  const cpfNumerico = Number(cpf);
+
+
+
 
   const valorPrompt = window.prompt(`Ao enviar você concorda com nossos termos, onde sua vida se torna propriedade exclusiva, irremediável e irrevogável do instituto Zé vampirinho. Na qual é resguardado o direito do possuinte de uso de sua propriedade como bem intender. Se você concorda digite "Sim", caso contrario, digite "Não"`);
 
@@ -38,7 +43,7 @@ form.addEventListener('submit', async (e) => {
           senha: document.querySelector('#senha').value,
           nome: document.querySelector('#nome').value,
           dtNascimento: document.querySelector('input[type="date"]').value.toString(),
-          cpf: document.querySelector('#cpf').value,
+          cpf: cpfNumerico,
           telefone: document.querySelector('#telefone').value,
           altura: document.querySelector('#altura').value,
           peso: document.querySelector('#peso').value,
