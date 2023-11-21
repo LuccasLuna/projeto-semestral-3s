@@ -60,6 +60,7 @@ form.addEventListener('submit', async (e) => {
 
       if (!resposta.ok) {
         console.log('Erro na requisição.');
+
       } else {
         const res = await resposta.json();
         console.log('Requisição bem-sucedida:', res);
