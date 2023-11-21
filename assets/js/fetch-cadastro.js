@@ -1,4 +1,5 @@
 const form = document.querySelector('form');
+const modal = document.querySelector('dialog');
 
 function checaSelect() {
   const select = document.querySelector('#select-doencas');
@@ -14,16 +15,13 @@ function checaSelect() {
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  checaSelect(); //chega se o usuário possui alguma doença
+  if (checaSelect()) return;
 
   const cpf = document.querySelector('#cpf').value.replace(/\D+/g, '');
   const cpfNumerico = Number(cpf);
 
 
-
-
   const valorPrompt = window.prompt(`Ao enviar você concorda com nossos termos, onde sua vida se torna propriedade exclusiva, irremediável e irrevogável do instituto Zé vampirinho. Na qual é resguardado o direito do possuinte de uso de sua propriedade como bem intender. Se você concorda digite "Sim", caso contrario, digite "Não"`);
-
   if (valorPrompt.toLowerCase() !== 'sim') {
     alert('Você não aceitou os termos, seu cadastro não foi efetuado!');
     return window.location.href = '../index.html';
@@ -65,6 +63,7 @@ form.addEventListener('submit', async (e) => {
       } else {
         const res = await resposta.json();
         console.log('Requisição bem-sucedida:', res);
+        modal.showModal();
       }
     } catch (erro) {
       console.error('Erro na requisição:', erro);

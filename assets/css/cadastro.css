@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,800&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,7 +11,7 @@
 
 main {
   width: 100%;
-  padding: 2% 15%;  
+  padding: 2% 15%;
   background-image: url(../img/background-cadastro.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -32,7 +32,7 @@ form {
   align-items: center;
 }
 
-form ul{
+form ul {
   list-style: none;
 }
 
@@ -43,13 +43,15 @@ form p {
   color: white;
   font-weight: 800;
 }
-.titulo h1{
+
+.titulo h1 {
   font-size: 2rem;
   padding-bottom: .3rem;
   color: white;
   font-weight: 800;
 }
-.titulo p{
+
+.titulo p {
   font-size: 1.2rem;
   padding-bottom: 1.5rem;
   color: white;
@@ -75,17 +77,17 @@ form input::placeholder {
 
 
 
-.email{
+.email {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.email input{
+.email input {
   width: 50%;
-  
-  
+
+
   border: none;
   background-color: white;
   border-radius: 10px;
@@ -101,10 +103,10 @@ form input::placeholder {
 
 
 
-.info-pessoal input{
+.info-pessoal input {
   width: 50%;
   background-color: white;
-  
+
 }
 
 .peso-altura {
@@ -114,6 +116,7 @@ form input::placeholder {
   flex-wrap: wrap;
   gap: 6%;
 }
+
 .peso-altura input {
   width: 47%;
 }
@@ -126,15 +129,16 @@ form input::placeholder {
   color: white;
 }
 
-.lista-sexo { 
+.lista-sexo {
   width: 50%;
-  display: flex; 
+  display: flex;
   gap: 2rem;
 }
-.lista-sexo label{ 
+
+.lista-sexo label {
   font-size: 1.3rem;
   cursor: pointer;
-  
+
 }
 
 
@@ -180,22 +184,24 @@ form input::placeholder {
   gap: 1rem;
   align-items: center;
 }
+
 .lista-sangue input[type='radio'] {
- opacity: 0;
+  opacity: 0;
 }
 
 .lista-sangue ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  
+
 }
-.lista-sangue label{
+
+.lista-sangue label {
   display: inline-flex;
   width: 3.12rem;
   height: 3.12rem;
   font-weight: 800;
-  place-items:center;
+  place-items: center;
   background-color: white;
   border-radius: 50%;
   cursor: pointer;
@@ -205,10 +211,10 @@ form input::placeholder {
   color: #FF0046;
   border: 2px solid white;
   transition: .5s ease-in-out;
-} 
+}
 
 .clicado {
-  color: white  !important;
+  color: white !important;
   background-color: transparent !important;
 }
 
@@ -220,22 +226,24 @@ form input::placeholder {
 }
 
 
-.endereco ul{
+.endereco ul {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.endereco li, .endereco input{
+
+.endereco li,
+.endereco input {
   width: 100%;
 }
 
-.frag-endereco ul{
+.frag-endereco ul {
   display: flex;
   flex-direction: row;
   width: 100%;
   gap: 2%;
- 
+
 }
 
 .doenca {
@@ -248,7 +256,8 @@ form input::placeholder {
   padding-bottom: 5rem;
   text-align: start;
 }
-.doenca select{
+
+.doenca select {
   width: 12rem;
   border-radius: 5px;
 }
@@ -268,10 +277,39 @@ form button {
   background-color: white;
   transition: .5s ease-in-out;
 }
+
 form button:hover {
- background-color: transparent;
- color: white;
+  background-color: transparent;
+  color: white;
 }
+
 form button i {
   padding-left: .7rem;
+}
+
+dialog {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: auto;
+  padding: 2rem;
+  color: #FF0046;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.096);
+}
+
+dialog button {
+  font-size: 1.2rem;
+  font-weight: 500;
+  align-items: end;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: .7rem;
+  color: #FF0046;
+  cursor: pointer;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.445);
 }

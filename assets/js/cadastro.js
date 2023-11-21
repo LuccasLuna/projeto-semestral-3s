@@ -1,10 +1,11 @@
 
 const listaSangue = document.querySelector('.ul-sangue');
+const btnModal = document.querySelector('.btn-modal')
 
 
 listaSangue.addEventListener('click', (e) => {
 
-  if(e.target.tagName === 'INPUT') {
+  if (e.target.tagName === 'INPUT') {
     const input = e.target;
 
     const allLabels = document.querySelectorAll('.ul-sangue label');
@@ -20,4 +21,8 @@ listaSangue.addEventListener('click', (e) => {
   }
 });
 
- 
+
+btnModal.addEventListener('click', () => window.location.href = './perfil.html');
+
+
+
